@@ -12,7 +12,16 @@ function resolve (dir) {
 module.exports = {
   runtimeCompiler: true,
   devServer:{
-    open:true
+    open:true,
+    proxy:{
+      '/3001': {
+          target: 'http://localhost:3001',
+          changeOrigin: true,
+          pathRewrite:{
+              "^/3001":""
+          }
+      }
+  }
   },
   configureWebpack:{
     resolve: {
