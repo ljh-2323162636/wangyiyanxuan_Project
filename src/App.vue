@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <Footer />
+    <Footer v-show="$route.meta.showFooter"/>
   </div>
 </template>
 
@@ -33,5 +33,5 @@ export default {
   height 100%
   margin 0
   padding 0
-  overflow scroll
+  overflow auto
 </style>

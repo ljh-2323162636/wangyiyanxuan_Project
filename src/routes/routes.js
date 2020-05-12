@@ -8,22 +8,27 @@ export default [
   {
     path: '/index',
     component: index,
+    meta:{showFooter:true}
   },
   {
     path: '/cateList',
     component: cateList,
+    meta:{showFooter:true}
   },
   {
     path: '/buy',
     component: buy,
+    meta:{showFooter:true}
   },
   {
     path: '/cart',
     component: cart,
+    meta:{showFooter:true}
   },
   {
     path: '/personal',
     component: personal,
+    meta:{showFooter:false}
   },
-  {path:'/',redirect:'/index'}
+  {path:'/',redirect:'/buy'}
 ]

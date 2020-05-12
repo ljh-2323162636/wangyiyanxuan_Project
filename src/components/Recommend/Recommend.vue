@@ -90,6 +90,7 @@ Vue.use(SwipeItem);
 
 <style lang="stylus" scoped>
 .recommendContainer
+  margin-top 168px
   .my-swipe 
     width 100%
     height 296px
